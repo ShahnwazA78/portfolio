@@ -4,7 +4,7 @@
 }
 .query-form{
     width: calc(100%-375px);
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 .query-form form{
     display: flex;
@@ -16,7 +16,7 @@
 }
 .query-form .input-field{
     width: calc(50%-20px);
-    margin: 10px;  
+    margin: 10px 0;  
 }
 .full-width{
     width: 100%;
@@ -26,22 +26,24 @@ form input{
     height: 57px;
     border:1px soild rbga(255, 255, 255, 0.2);
     border-radius: 6px;
-    background-color: transparent;
+    background-color: rgba(1, 1, 1, 0.29);
     outline: none;
     padding:10px 20px;
-    font:100 1.2rem cursive;
+    font:100 1.2rem "Lato";
+    color: white;
 }
 input:focus{
     border-color: var(--dark-orange);
 }
 form textarea{
+    color: white;
     border-radius: 6px;
     width: 100%;
     height: 120px;
     border:1px soild rbga(255, 255, 255, 0.2);
-    font:100 1.2rem cursive;
+    font:100 1.2rem "Lato";
     padding:10px 20px;
-    background-color: transparent;
+    background-color: rgba(1, 1, 1, 0.29);
     outline: none;
     resize: none;
 }
@@ -52,7 +54,7 @@ form button{
     padding: 10px;
     background-color:var(--black) ;
     border-radius: 6px;
-    font:900 1.2rem cursive;
+    font:900 1.2rem "Lato";
     color: white;
     margin-left: 10px;
     margin-top: 10px;
@@ -66,7 +68,8 @@ form button:hover{
   box-shadow: inset 200px 0 0 0 var(--dark-orange);
 }
 .errors{
-    color: red;
+    text-align: left;
+    color: rgb(253, 0, 0);
     font: 500 12px sans-serif;
     margin-bottom: -15px; 
 }
