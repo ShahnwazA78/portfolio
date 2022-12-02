@@ -1,0 +1,169 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.profile-container {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 10%;
+}
+
+.profile-parent {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  color: white;
+  opacity: 100%;
+  /* width: 60rem; */
+}
+
+.profile-details-name {
+  font-size: 24px;
+  font-family: "Popins SemiBold";
+}
+.profile-details-role {
+ 
+  display: flex;
+  flex-direction: column;
+  margin: 14px 0 24px 0;
+}
+.profile-details-role h1 {
+  
+  font-size: 50px;
+  font-family: cursive;
+}
+.primary-text {
+  min-width: fit-content;
+  max-width: 40rem;
+  color: (--white);
+}
+.highlighted-text {
+  color: var(--dark-orange);
+}
+.colz-icons a{
+  padding: 2px;
+  color: white
+}
+.colz-icons a{
+  transition: all .5s;
+}
+.colz-icons a:hover {
+  color:var(--dark-orange);
+}
+.profile-role-tagline {
+  width:10px;
+  font-size: 20px;
+  margin: 5px 0 0 0;
+  /* text-transform: uppercase; */
+  font-family:cursive;
+  /* font-style: italic; */
+}
+.profile-options .highlighted-btn {
+  margin: 0 0 0 28px;
+  transition: all 0.6s;
+}
+.profile-options .highlighted-btn:hover {
+  transform: scale(1.05);
+  margin: 0 0 0 28px;
+    padding-left: 10px;
+    border: 2px solid ;
+  border-color: var(--dark-orange);
+  background-color: #f6e7e3;
+  color: #111;
+}
+.profile-options .primary-btn {
+  transition: all 0.6s;
+}
+.profile-options .primary-btn:hover {
+  transform: scale(1.05);
+}
+.profile-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 0px 0px white;
+  border-radius: 50%;
+  height: 380px;
+  width: 380px;
+  margin: 0 0px 0 100px;
+}
+.profile-picture-background {
+  height: 92%;
+  width: 92%;
+  background-image: url("../../Assets/Home/shahnwaz1-removebg-preview.png");
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  transition: all 1s;
+}
+.profile-picture-background:hover {
+  transform: scale(1.06);
+}
+
+@media screen and (max-width: 1110px) {
+  .profile-picture {
+    margin: 0 0 0 80px;
+  }
+  .profile-details-name {
+    font-size: 20px;
+  }
+  .profile-details-role .primary-text {
+    font-size: 12px;
+  }
+  .profile-options .btn {
+    width: 120px;
+    padding: 11px 0;
+    z-index: 700;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .profile-container{
+    margin-top: 150px;
+  }
+  .profile-picture {
+    height: 320px;
+    width: 320px;
+    margin: 0 0 0 4px;
+  }
+}
+@media screen and (max-width: 810px) {
+  .profile-picture {
+    margin: 0 !important;
+  }
+  .profile-parent {
+    flex-direction: column-reverse;
+    margin: 40px 0 0 0;
+  }
+  .profile-options {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .profile-details {
+    margin: 25px 0 0;
+  }
+  .profile-options .highlighted-btn {
+    margin: 0 !important;
+  }
+  .profile-options, .profile-details-role{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:375px) {
+    .profile-picture{
+        height: 274px;
+        width: 274px;
+        margin-top: -90px;
+    }
+    .profile-details{
+        width: 90%;
+    }
+
+}

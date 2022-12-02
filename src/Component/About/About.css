@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Lato:wght@400;700;900&family=Roboto:wght@700;900&family=Secular+One&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.About-container{
+  height: 100vh;
+}
+.About-container,
+.about-parent {
+  /* margin-top:10px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.about-text,
+.about-question,
+.about-circle,
+.About-container {
+  padding: 5px;
+}
+.about-text {
+  /* margin-bottom: 25px; */
+  /* margin-top: 20px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.about-text-highlighted {
+  font: 900 2rem "Lato";
+  letter-spacing: 1px;
+}
+.about-question {
+  font: 100 0.8em "Lato";
+  letter-spacing: 3px;
+  color: rgba(14, 14, 14, 0.719);
+}
+.about-udernline {
+  width: 100px;
+  height: 45px;
+  position: relative;
+}
+.about-udernline::after,
+.about-udernline::before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  height: 2px;
+  background: rgb(9, 9, 9);
+  width: 60%;
+  top: 30%;
+}
+.about-udernline::after {
+  left: -25px;
+}
+.about-udernline::before {
+  right: -25px;
+}
+.about-circle {
+  background-color: var(--dark-orange);
+  position: absolute;
+  height: 10px;
+  width: 30px;
+  border: 1px solid black;
+  left: 0;
+  right: 0;
+  top: -36%;
+  bottom: 1%;
+  margin: auto;
+  border-radius: 50px;
+}
+.about-main-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  padding: 1px 5px 1px 1px;
+  margin-right: 1px;
+  /* border-radius: 10px; */
+  font-family: "Lato";
+  box-shadow: 1px -3px 9px 1px #656561;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+.about-my-photo {
+    margin: -6px;
+    height: 500px;
+    width: 380px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: -17px;
+    margin-left: -20px;
+}
+.photo-container {
+  height: 98%;
+  width: 90%;
+  /* border-radius: 10px 0px 0px 10px; */
+  box-sizing: border-box;
+  background-image: url("../Assets/Home/full3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 2s;
+}
+/* .photo-container:hover {
+
+  transform: rotate(-1turn);
+  height: 98%;
+  width: 90%;
+  border-radius: 10px 0px 0px 10px;
+  box-sizing: border-box;
+  background-image: url("../Assets/Home/full-with-specs.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
+.about-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  align-items: flex-start;
+  text-align: center;
+}
+.about-intro,
+.about-key-points,
+.about-btn {
+  padding: 0px 0 25px;
+  margin: 10px 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: left;
+  letter-spacing: 1px;
+  width: 25rem;
+  box-sizing: border-box;
+}
+.about-key-points {
+  padding: 0px 0 55px;
+}
+.about-btn {
+  padding: 0px;
+}
+.about-key-points {
+  flex-direction: column;
+}
+.about-ul {
+  list-style: none;
+}
+
+.about-ul li::before {
+  content: "\2022";
+  color: var(--dark-orange);
+  font-weight: 900;
+  display: inline-block;
+  width: 2em;
+  margin-left: -1.6em;
+}
+
+@media screen and (max-width:600px) {
+   
+    .about-main-div
+    {
+        position: relative;
+        left: -2%;
+        width: 90%;
+        padding:0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    .about-details,.about-intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        align-items: left;
+        width: fit-content;
+   
+    }
+    .about-details,.about-key-points{
+        
+        text-align: left;
+        width: 95%;
+    }
+    .about-description{
+        width: 20rem;
+        text-align: justify;
+    }
+    .about-btn{
+        width: fit-content;
+        flex-direction: row;
+      justify-content: space-evenly;
+    }
+    .about-my-photo{
+        display: none;
+    }
+}
+@media screen and (max-width:768px) {
+    .about-main-div
+    {
+        margin-left:20px;
+        width: 100%;
+    }
+    .about-my-photo{
+        display: none;
+    }
+}

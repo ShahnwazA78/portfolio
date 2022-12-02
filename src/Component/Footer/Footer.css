@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.footersec-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background: var(--black);
+    width: 100%;
+    font: 100 12px cursive;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 2rem;
+}
+.social-icons{
+    display: flex;
+
+}
