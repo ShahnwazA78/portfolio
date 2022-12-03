@@ -1,12 +1,11 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b9becec5.css",
-    "main.js": "/portfolio/static/js/main.537a36a1.js",
+    "main.css": "/portfolio/static/css/main.f2b1c6e3.css",
+    "main.js": "/portfolio/static/js/main.ea326c98.js",
     "static/media/advance2.gif": "/portfolio/static/media/advance2.c2cb8dc3d0e5ddfb993a.gif",
     "static/media/advance3.gif": "/portfolio/static/media/advance3.a29ed86586abcd9d3719.gif",
     "static/media/advance1.gif": "/portfolio/static/media/advance1.9da975e35a505cf4830a.gif",
     "static/media/full3.jpg": "/portfolio/static/media/full3.b8f0cb391b567a9d1247.jpg",
-    "static/media/cert2.jpg": "/portfolio/static/media/cert2.bef1837d5e919a4d5ad2.jpg",
     "static/media/begi5.gif": "/portfolio/static/media/begi5.2cc6b39fd675b6492436.gif",
     "static/media/begi1.gif": "/portfolio/static/media/begi1.3ea1f725bc5aa89e6d1a.gif",
     "static/media/shahnwaz1-removebg-preview.png": "/portfolio/static/media/shahnwaz1-removebg-preview.6414a61b768b9be70ae9.png",
@@ -23,11 +22,11 @@
     "static/media/contact.png": "/portfolio/static/media/contact.d241b417a4260c56748a.png",
     "static/media/project.png": "/portfolio/static/media/project.1243f337ca7e3284934c.png",
     "index.html": "/portfolio/index.html",
-    "main.b9becec5.css.map": "/portfolio/static/css/main.b9becec5.css.map",
-    "main.537a36a1.js.map": "/portfolio/static/js/main.537a36a1.js.map"
+    "main.f2b1c6e3.css.map": "/portfolio/static/css/main.f2b1c6e3.css.map",
+    "main.ea326c98.js.map": "/portfolio/static/js/main.ea326c98.js.map"
   },
   "entrypoints": [
-    "static/css/main.b9becec5.css",
-    "static/js/main.537a36a1.js"
+    "static/css/main.f2b1c6e3.css",
+    "static/js/main.ea326c98.js"
   ]
 }
