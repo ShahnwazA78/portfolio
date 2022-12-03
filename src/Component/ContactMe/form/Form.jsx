@@ -191,7 +191,7 @@ const Form = () => {
                                     </svg>
                                 </div>
                                 <p className="pl-4 text-white text-base">
-                                    shahnwaza058@gmail
+                                    shahnwaza058@gmail.com
                                 </p>
                             </div>
                         </div>

@@ -3,6 +3,7 @@ import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import "./Profile.css";
 import { scrollToSection } from "../../utils/helpers";
+
 const Profile = () => {
   return (
       <div

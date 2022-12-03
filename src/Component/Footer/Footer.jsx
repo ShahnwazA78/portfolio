@@ -3,7 +3,8 @@ import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FiLinkedin } from "react-icons/fi";
 import Social from "./social-icons/Social";
 import "./Footer.css";
-import { scrollToSection } from "../utils/helpers";
+import { motion } from "framer-motion";
+
 const Footersec = () => {
     return (
         <div className="footersec-container">

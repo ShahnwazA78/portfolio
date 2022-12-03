@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Showcase from "./showcase/Showcase";
+import { motion } from "framer-motion";
 import "./Projects.css";
 const filtersData = [
     {
@@ -118,38 +119,47 @@ const Projects = () => {
             className="project-container"
             id="project"
         >
-            <div className="project-parent">
-                <div className="project-text">
-                    <div className="project-text-highlighted">Projects</div>
-                    <div className="project-question">List of my projects</div>
-                    <div className="project-udernline">
-                        <div className="resume-circle"></div>
+            <motion.div
+                viewport={{ once: false }}
+                initial={{ opacity: 0, x: 100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ type: "easeIn", duration: 0.7, delay: 0.15 }}
+            >
+                <div className="project-parent">
+                    <div className="project-text">
+                        <div className="project-text-highlighted">Projects</div>
+                        <div className="project-question">
+                            List of my projects
+                        </div>
+                        <div className="project-udernline">
+                            <div className="resume-circle"></div>
+                        </div>
+                    </div>
+
+                    <div className="filters">
+                        <ul className={"filters-menu-items"}>
+                            {filtersData.map((value) => (
+                                <li
+                                    className={`filter-menu-item ${
+                                        Active === value.id ? "active" : ""
+                                    }`}
+                                    key={value.id}
+                                    onClick={() => handleClick(value.id)}
+                                    filterProject={(tag) => filterProject(tag)}
+                                >
+                                    {value.name}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                    <div className="project-content-wraper">
+                        <Showcase
+                            data={projects}
+                            transition={transition}
+                        />
                     </div>
                 </div>
-
-                <div className="filters">
-                    <ul className={"filters-menu-items"}>
-                        {filtersData.map((value) => (
-                            <li
-                                className={`filter-menu-item ${
-                                    Active === value.id ? "active" : ""
-                                }`}
-                                key={value.id}
-                                onClick={() => handleClick(value.id)}
-                                filterProject={(tag) => filterProject(tag)}
-                            >
-                                {value.name}
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-                <div className="project-content-wraper">
-                    <Showcase
-                        data={projects}
-                        transition={transition}
-                    />
-                </div>
-            </div>
+            </motion.div>
         </div>
     );
 };
