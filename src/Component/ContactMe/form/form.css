@@ -1,79 +1,52 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.query-form{
-    width: calc(100%-375px);
-    /* margin-left: 20px; */
+#queryForm{
+    padding:0 10%;
 }
-.query-form form{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin-top: -10px;
-    justify-content: center;
-    /* align-items: center; */
+.form-container-form{
+    
+    background-color: rgb(36, 38, 59);
+     background: url(../../Assets/Home/contact.png);
+    background: url(https://media.giphy.com/media/BHNfhgU63qrks/giphy.gif);
+    box-shadow: inset 0 0 0 2000px rgba(36, 38, 59, 0.5);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.query-form .input-field{
-    width: calc(50%-20px);
-    margin: 10px 0;  
+.form-parent-container{
+    background-color:whitesmoke
 }
-.full-width{
+form button {
     width: 100%;
-}
-form input{
-    width: 100%;
-    height: 57px;
-    border:1px soild rbga(255, 255, 255, 0.2);
-    border-radius: 6px;
-    background-color: rgba(1, 1, 1, 0.29);
-    outline: none;
-    padding:10px 20px;
-    font:100 1.2rem "Lato";
+    font-weight: bolder;
+    background-color: rgb(36, 38, 59) !important;
     color: white;
+    box-shadow: inset 0 0 0 0 var(--dark-orange);
+    transition: color 200ms ease-in, box-shadow 200ms ease-in, transform 200ms;
 }
-input:focus{
-    border-color: var(--dark-orange);
-}
-form textarea{
-    color: white;
-    border-radius: 6px;
-    width: 100%;
-    height: 120px;
-    border:1px soild rbga(255, 255, 255, 0.2);
-    font:100 1.2rem "Lato";
-    padding:10px 20px;
-    background-color: rgba(1, 1, 1, 0.29);
-    outline: none;
-    resize: none;
-}
-form button{
-    outline: 0;
-    border: 0;
-    width: 90px;
-    padding: 10px;
-    background-color:var(--black) ;
-    border-radius: 6px;
-    font:900 1.2rem "Lato";
-    color: white;
-    margin-left: 10px;
-    margin-top: 10px;
-    /* cursor: pointer; */
-     box-shadow: inset 0 0 0 0 var(--dark-orange);
-        transition: color 200ms ease-in-out,box-shadow 200ms ease-in-out,transform 200ms;
-}
-form button:hover{
-    /* color:black; */
+form button:hover {
     transform: scale(1.01);
-  box-shadow: inset 200px 0 0 0 var(--dark-orange);
+    box-shadow: inset 788px 0 0 0 var(--dark-orange);
 }
-.errors{
+.errors {
     text-align: left;
     color: rgb(253, 0, 0);
     font: 500 12px sans-serif;
-    margin-bottom: -15px; 
+    margin-bottom: -15px;
 }
-.errors::before{
+.errors::before {
+    content: "*";
+    font-weight: 900;
+}
+.errors1 {
+    text-align: left;
+    color: rgb(253, 0, 0);
+    font: 500 12px sans-serif;
+    margin-bottom:5px;
+}
+.errors1::before {
     content: "*";
     font-weight: 900;
 }

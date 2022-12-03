@@ -45,7 +45,13 @@
 .highlighted-text {
   color: var(--dark-orange);
 }
+.colz-icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .colz-icons a{
+
   padding: 2px;
   color: white
 }

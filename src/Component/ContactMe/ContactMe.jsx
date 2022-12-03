@@ -2,7 +2,7 @@ import React from "react";
 import Section from "../Section/Section";
 import Contactinfo from "./contact-info/Contactinfo";
 import Form from "./form/Form";
-import "./ContactMe.css";
+// import "./ContactMe.css";
 const ContactMe = () => {
     return (
         <div className="contact-container" id="contact-me">
@@ -12,7 +12,7 @@ const ContactMe = () => {
                     question="Feel free to contact me.."
                 />
                 <div className="contact-content-wraper">
-                    <Contactinfo />
+                    {/* <Contactinfo /> */}
                     <Form />
                 </div>
             </div>
