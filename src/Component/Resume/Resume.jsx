@@ -335,21 +335,22 @@ const Resume = () => {
                                                             development team and
                                                             product manager for
                                                             implementation of
-                                                            software solution
+                                                            software solution.
                                                         </li>
                                                         <li>
-                                                            Work with the
-                                                            development team and
-                                                            product manager for
-                                                            implementation of
-                                                            software solutio
+                                                            Create a platform
+                                                            that helps in
+                                                            learning new
+                                                            technologies like
+                                                            Blockchain,
+                                                            Metaverse, AR/VR and
+                                                            AI/ML.
                                                         </li>
                                                         <li>
-                                                            Work with the
-                                                            development team and
-                                                            product manager for
-                                                            implementation of
-                                                            software solutio
+                                                            Designed and
+                                                            implemented a web
+                                                            application in MERN
+                                                            stack.
                                                         </li>
                                                     </ol>
                                                 </div>
@@ -373,7 +374,8 @@ const Resume = () => {
                                                 <div className="work-description">
                                                     <ol className="work-ol">
                                                         <li>
-                                                            DSA CPP Google Forms
+                                                            DSA CPP Google
+                                                            Forms.
                                                         </li>
                                                         <li>
                                                             It was the

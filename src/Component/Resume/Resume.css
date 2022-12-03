@@ -474,6 +474,7 @@
     margin-left: 60px;
 }
 .work-ol {
+    list-style-type:decimal;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
