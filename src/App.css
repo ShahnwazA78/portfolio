@@ -25,10 +25,9 @@
     --loader-color: #0cbfae;
 }
 .scroll-to-top {
-
     box-shadow: 10px 10px red !important;
     color: var(--black) !important;
     bottom: 2rem !important;
     right: 4rem !important;
-    width:0 !important;
+    width: 0 !important;
 }
