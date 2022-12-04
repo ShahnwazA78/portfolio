@@ -85,6 +85,14 @@ const projectsData = [
             thumbnail: require("../Assets/Home/begi5.gif"),
         },
     },
+    {
+        id: 9,
+        name: "Weather Report",
+        tags: ["intermediate", "beginner"],
+        media: {
+            thumbnail: require("../Assets/Home/interme1.gif"),
+        },
+    },
 ];
 
 const Projects = () => {
