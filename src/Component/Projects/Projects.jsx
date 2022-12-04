@@ -72,7 +72,7 @@ const projectsData = [
     {
         id: 7,
         name: "ToDo List-interact with local storage",
-        tags: ["intermediate", "beginner"],
+        tags: ["intermediate"],
         media: {
             thumbnail: require("../Assets/Home/begi4.gif"),
         },
@@ -88,7 +88,7 @@ const projectsData = [
     {
         id: 9,
         name: "Weather Report",
-        tags: ["intermediate", "beginner"],
+        tags: ["intermediate"],
         media: {
             thumbnail: require("../Assets/Home/interme1.gif"),
         },
@@ -101,6 +101,7 @@ const Projects = () => {
         filterProject(id);
         setActive(id);
     };
+    
     const [projects, setProjects] = useState(projectsData);
     const [transition, setTransition] = useState(false);
     const filterProject = (tag) => {
